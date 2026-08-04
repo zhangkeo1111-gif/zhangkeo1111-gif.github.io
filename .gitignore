@@ -1,0 +1,20 @@
+qa/
+tmp/
+server.log
+server-error.log
+assets/CV-Chenggang-Zhang.pdf
+
+# Legacy duplicate files kept locally; deployed versions live under assets/.
+/aiac-main.png
+/cert-*.jpg
+/changan-logo.png
+/energy-main.png
+/icae-main.png
+/icic-main.png
+/itsc-main.pdf
+/itsc-main.png
+/profile.jpg
+/rem-main.png
+/scidata-main.png
+/tsinghua-logo.png
+/ucd-logo.png
