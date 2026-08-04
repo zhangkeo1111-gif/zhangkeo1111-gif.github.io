@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-05T00:00:00+08:00",
+  "title": "Design System: Chenggang Zhang Research Atlas",
+  "extensions": {
+    "colorMeta": {
+      "drawing-sheet": { "role": "neutral", "displayName": "Drawing Sheet", "canonical": "#f4f1e8", "tonalRamp": ["#26251f", "#48463c", "#6d6a5d", "#918e7d", "#b4b09e", "#d5d1c2", "#ebe8dd", "#f8f6f0"] },
+      "paper": { "role": "neutral", "displayName": "Paper", "canonical": "#fffdf8", "tonalRamp": ["#282722", "#4b4942", "#706e65", "#96938a", "#bbb8af", "#dad7d0", "#efede8", "#fffdf8"] },
+      "sage-sheet": { "role": "neutral", "displayName": "Sage Sheet", "canonical": "#e9f0ea", "tonalRamp": ["#202823", "#3c4b41", "#5b7061", "#7b9482", "#9db5a2", "#bfd3c3", "#d9e6dc", "#eef5ef"] },
+      "sage-field": { "role": "neutral", "displayName": "Sage Field", "canonical": "#dce8df", "tonalRamp": ["#1e2721", "#39493e", "#566d5e", "#74917d", "#95b29b", "#b6d0bb", "#d0e3d4", "#ebf4ed"] },
+      "ink": { "role": "neutral", "displayName": "Research Ink", "canonical": "#14211e", "tonalRamp": ["#14211e", "#263a35", "#40564f", "#5f746d", "#83958f", "#aab7b3", "#d0d8d5", "#f0f3f2"] },
+      "ink-secondary": { "role": "neutral", "displayName": "Secondary Ink", "canonical": "#4e5e59", "tonalRamp": ["#18201e", "#2d3a36", "#465650", "#62736d", "#82928d", "#a6b3af", "#cbd3d1", "#eef1f0"] },
+      "ink-soft": { "role": "neutral", "displayName": "Soft Ink", "canonical": "#71807b", "tonalRamp": ["#1b201e", "#343b39", "#4f5855", "#6c7673", "#899592", "#aab4b1", "#cdd4d2", "#eff2f1"] },
+      "rule": { "role": "neutral", "displayName": "Fine Rule", "canonical": "#d5ddd7", "tonalRamp": ["#202521", "#3c463f", "#5b685f", "#7b8a7f", "#9caa9f", "#bbc7bd", "#d7dfd9", "#f0f4f1"] },
+      "rule-strong": { "role": "neutral", "displayName": "Strong Rule", "canonical": "#b6c6bd", "tonalRamp": ["#1b2420", "#33443b", "#4e6558", "#698575", "#87a394", "#a8c0b2", "#cadbd0", "#edf4ef"] },
+      "research-green": { "role": "primary", "displayName": "Research Green", "canonical": "#0d5945", "tonalRamp": ["#06251d", "#093b2e", "#0d5945", "#19745c", "#3b9177", "#6bb09a", "#a6d1c2", "#e2eee7"] },
+      "dossier-green": { "role": "primary", "displayName": "Dossier Green", "canonical": "#073b2e", "tonalRamp": ["#041e18", "#073b2e", "#0d5945", "#26725d", "#508f79", "#7cae9a", "#b0cfc2", "#e8f1ed"] },
+      "figure-navy": { "role": "secondary", "displayName": "Figure Navy", "canonical": "#1c3a50", "tonalRamp": ["#101f2a", "#1c3a50", "#31566d", "#50748a", "#7594a7", "#9db5c3", "#c7d7df", "#edf3f6"] },
+      "restrained-copper": { "role": "tertiary", "displayName": "Restrained Copper", "canonical": "#a5653c", "tonalRamp": ["#331d10", "#56321d", "#7e4a2b", "#a5653c", "#bf835c", "#d6a583", "#e9cbb4", "#f7eee7"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Research Thesis", "purpose": "First-view thesis only." },
+      "headline": { "displayName": "Section Headline", "purpose": "Major evidence-section openings." },
+      "title": { "displayName": "Evidence Title", "purpose": "Publication, project, institution, and experience titles." },
+      "body": { "displayName": "Reading Text", "purpose": "Long-form explanation and complete evidence." },
+      "label": { "displayName": "Dossier Metadata", "purpose": "Dates, indices, metrics, and status annotations." }
+    },
+    "shadows": [
+      { "name": "soft-dossier-lift", "value": "0 18px 52px rgba(17, 47, 38, 0.08)", "purpose": "Open mobile navigation and hovered project panels only." }
+    ],
+    "motion": [
+      { "name": "state-fast", "value": "160ms ease", "purpose": "Button, figure, project, and certificate hover states." },
+      { "name": "nav-rule", "value": "180ms ease", "purpose": "Active and hovered navigation underline." },
+      { "name": "reduced-motion", "value": "0.01ms", "purpose": "Effective removal of transitions and animation when reduced motion is requested." }
+    ],
+    "breakpoints": [
+      { "name": "compact-desktop", "value": "1100px" },
+      { "name": "single-flow", "value": "900px" },
+      { "name": "mobile", "value": "600px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The direct evidence or contact action.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">View publications</a>",
+      "css": ".ds-btn-primary { display:inline-flex; min-height:46px; padding:10px 18px; align-items:center; justify-content:center; border:1px solid var(--accent, #0d5945); border-radius:var(--radius-sm, 7px); color:#fff; background:var(--accent, #0d5945); font:650 17px/1.4 'Source Sans 3',system-ui,sans-serif; text-decoration:none; transition:background-color 160ms ease,transform 160ms ease; } .ds-btn-primary:hover { color:#fff; background:var(--accent-dark, #073b2e); transform:translateY(-2px); } .ds-btn-primary:focus-visible { outline:3px solid rgba(165,101,60,.75); outline-offset:4px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "A restrained parallel action on paper or the dossier rail.",
+      "html": "<a class=\"ds-btn-secondary\" href=\"#\">Email</a>",
+      "css": ".ds-btn-secondary { display:inline-flex; min-height:46px; padding:10px 18px; align-items:center; justify-content:center; border:1px solid var(--accent, #0d5945); border-radius:var(--radius-sm, 7px); color:var(--accent-dark, #073b2e); background:transparent; font:650 17px/1.4 'Source Sans 3',system-ui,sans-serif; text-decoration:none; transition:background-color 160ms ease,color 160ms ease,transform 160ms ease; } .ds-btn-secondary:hover { color:#fff; background:var(--accent, #0d5945); transform:translateY(-2px); } .ds-btn-secondary:focus-visible { outline:3px solid rgba(165,101,60,.75); outline-offset:4px; }"
+    },
+    {
+      "name": "Evidence Tag",
+      "kind": "chip",
+      "refersTo": "evidence-tag",
+      "description": "Non-interactive metadata for method, venue, and status.",
+      "html": "<span class=\"ds-evidence-tag\">Published</span>",
+      "css": ".ds-evidence-tag { display:inline-flex; min-height:28px; padding:3px 9px; align-items:center; border:1px solid var(--line-strong, #b6c6bd); border-radius:999px; color:var(--accent-dark, #073b2e); background:var(--surface-accent, #dce8df); font:650 .75rem/1.2 'Source Sans 3',system-ui,sans-serif; }"
+    },
+    {
+      "name": "Atlas Navigation",
+      "kind": "nav",
+      "description": "Sticky section navigation with a copper evidence marker.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Primary\"><a class=\"ds-nav-link ds-active\" href=\"#\">Publications</a><a class=\"ds-nav-link\" href=\"#\">Experience</a></nav>",
+      "css": ".ds-nav { display:flex; min-height:72px; gap:32px; align-items:stretch; border-bottom:1px solid var(--line-strong, #b6c6bd); background:rgba(255,253,248,.94); } .ds-nav-link { position:relative; display:grid; min-height:44px; place-items:center; color:var(--text, #14211e); font:600 .92rem/1.4 'Source Sans 3',system-ui,sans-serif; text-decoration:none; } .ds-nav-link::after { content:''; position:absolute; right:0; bottom:0; left:0; height:2px; background:var(--warm, #a5653c); transform:scaleX(0); transition:transform 180ms ease; } .ds-nav-link:hover::after,.ds-nav-link.ds-active::after { transform:scaleX(1); } .ds-nav-link:focus-visible { outline:3px solid rgba(165,101,60,.75); outline-offset:4px; }"
+    },
+    {
+      "name": "Publication Plate",
+      "kind": "custom",
+      "description": "The signature complete-evidence record with index, journal figure, and metadata.",
+      "html": "<article class=\"ds-publication\"><span class=\"ds-index\">01</span><div class=\"ds-figure\">Journal figure</div><div><h3>Publication title remains complete</h3><p>Authors, venue, status, DOI, and supporting metadata.</p></div></article>",
+      "css": ".ds-publication { display:grid; grid-template-columns:56px minmax(180px,240px) minmax(0,1fr); gap:24px; padding:30px 0; border-top:1px solid var(--line, #d5ddd7); color:var(--text, #14211e); } .ds-index { color:var(--warm, #a5653c); font:500 1.55rem/1 'Source Serif 4',Georgia,serif; } .ds-figure { display:grid; min-height:150px; place-items:center; border:1px solid var(--line, #d5ddd7); border-radius:var(--radius-sm, 7px); color:var(--text-secondary, #4e5e59); background:var(--surface, #fffdf8); transition:border-color 160ms ease,transform 160ms ease; } .ds-figure:hover { border-color:var(--accent, #0d5945); transform:translateY(-2px); } .ds-publication h3 { margin:0 0 12px; font:600 1.5rem/1.22 'Source Serif 4',Georgia,serif; } .ds-publication p { margin:0; color:var(--text-secondary, #4e5e59); font:400 17px/1.65 'Source Sans 3',system-ui,sans-serif; }"
+    },
+    {
+      "name": "Project Evidence Panel",
+      "kind": "card",
+      "refersTo": "project-panel",
+      "description": "A project argument with status and quantitative results.",
+      "html": "<article class=\"ds-project\"><span class=\"ds-project-label\">Research project</span><h3>Project title</h3><p>Method, responsibility, and verified outcome.</p><dl><dt>Result</dt><dd>Measured value</dd></dl></article>",
+      "css": ".ds-project { position:relative; min-height:280px; padding:28px; border:1px solid var(--line-strong, #b6c6bd); border-radius:var(--radius-md, 12px); color:var(--text, #14211e); background:rgba(255,253,248,.76); transition:border-color 160ms ease,box-shadow 160ms ease,transform 160ms ease; } .ds-project:hover { border-color:var(--accent, #0d5945); box-shadow:0 18px 52px rgba(17,47,38,.08); transform:translateY(-3px); } .ds-project-label,.ds-project dt { color:var(--warm, #a5653c); font:700 .76rem/1.2 'Source Sans 3',system-ui,sans-serif; letter-spacing:.08em; text-transform:uppercase; } .ds-project h3 { margin:12px 0; color:var(--accent-dark, #073b2e); font:600 1.5rem/1.22 'Source Serif 4',Georgia,serif; } .ds-project p { color:var(--text-secondary, #4e5e59); font:400 17px/1.65 'Source Sans 3',system-ui,sans-serif; } .ds-project dl { padding:12px 14px; background:var(--surface-soft, #e9f0ea); } .ds-project dd { margin:2px 0 0; color:var(--accent-dark, #073b2e); font:600 1.25rem/1.2 'Source Serif 4',Georgia,serif; }"
+    },
+    {
+      "name": "Certificate Disclosure",
+      "kind": "button",
+      "description": "The only control that changes the static certificate gallery density.",
+      "html": "<button class=\"ds-certificate-toggle\" type=\"button\" aria-expanded=\"false\">Show all 33 certificates</button>",
+      "css": ".ds-certificate-toggle { min-height:46px; padding:10px 18px; border:1px solid var(--accent, #0d5945); border-radius:var(--radius-sm, 7px); color:var(--accent-dark, #073b2e); background:transparent; font:650 17px/1.4 'Source Sans 3',system-ui,sans-serif; cursor:pointer; transition:background-color 160ms ease,color 160ms ease; } .ds-certificate-toggle:hover { color:#fff; background:var(--accent, #0d5945); } .ds-certificate-toggle:focus-visible { outline:3px solid rgba(165,101,60,.75); outline-offset:4px; }"
+    },
+    {
+      "name": "Contact Close",
+      "kind": "custom",
+      "description": "The deep-green final invitation after the evidence sequence.",
+      "html": "<section class=\"ds-contact\"><div><h2>Open to research collaborations.</h2><p>Contact follows understanding.</p></div><a href=\"mailto:example@example.com\">Email Chenggang</a></section>",
+      "css": ".ds-contact { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:60px; align-items:center; padding:58px; color:#fff; background:var(--accent-dark, #073b2e); } .ds-contact h2 { margin:0 0 12px; font:500 2.6rem/1.02 'Source Serif 4',Georgia,serif; letter-spacing:-.035em; } .ds-contact p { margin:0; color:#d6e5de; font:400 17px/1.65 'Source Sans 3',system-ui,sans-serif; } .ds-contact a { display:inline-flex; min-height:46px; padding:10px 18px; align-items:center; border:1px solid #fff; border-radius:var(--radius-sm, 7px); color:var(--accent-dark, #073b2e); background:#fff; font:650 17px/1.4 'Source Sans 3',system-ui,sans-serif; text-decoration:none; transition:transform 160ms ease; } .ds-contact a:hover { transform:translateY(-2px); } .ds-contact a:focus-visible { outline:3px solid rgba(165,101,60,.75); outline-offset:4px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Engineering Plate Compendium",
+    "overview": "This is an evidence-first mobility research atlas: warm ivory drawing sheets and disciplined deep-green structure carry publication figures, quantitative results, and precise academic metadata. It feels like a bound set of journal plates and engineering dossier pages, not a generic academic CV and not a neon automotive-technology showcase. The system is restrained and tactile. Source Serif 4 gives research theses, titles, and figures editorial authority; Source Sans 3 handles metadata and operational reading. Thin rules, ordered records, sparse copper markers, and real technical imagery establish credibility before decoration.",
+    "keyCharacteristics": [
+      "Warm drawing-sheet grounds with deep-green structural anchors.",
+      "Journal figures and complete evidence are primary visual material.",
+      "Serif argument paired with sans-serif metadata.",
+      "Precise one-pixel rules, measured density, and restrained copper notation.",
+      "Two approved expressions: an evidence split and an engineering dossier rail."
+    ],
+    "rules": [
+      { "name": "The Copper Annotation Rule", "body": "Copper marks sequence, time, and status; it never becomes a large background or competing brand color.", "section": "colors" },
+      { "name": "The No-Neon Rule", "body": "Color remains mineral, botanical, and printable. Do not introduce luminous cyan, electric blue, glowing gradients, or automotive-dashboard effects.", "section": "colors" },
+      { "name": "The Argument-and-Metadata Rule", "body": "Use serif type for claims, names, titles, and values; use sans-serif for navigation, annotations, provenance, and explanation.", "section": "typography" },
+      { "name": "The Flat Evidence Rule", "body": "Evidence is flat at rest; elevation appears only in response to interaction or temporary navigation state.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do lead with research identity, thesis, three focus lanes, and four factual metrics.",
+      "Do keep all six publications, four projects, three research experiences, two schools, every award and service item, and real contact link intact.",
+      "Do use real journal figures, logos, portrait, and certificate previews as evidence-bearing material.",
+      "Do preserve the focus-to-proof-to-experience-to-contact story and the metadata-first mobile band.",
+      "Do preserve skip navigation, semantic landmarks, descriptive alternative text, 44px-or-larger touch targets, visible focus, Escape handling, and reduced-motion support."
+    ],
+    "donts": [
+      "Don't add “CV,” “Resume,” download prompts, Google Scholar, LinkedIn, invented metrics, invented claims, or placeholder links.",
+      "Don't hide, paginate, summarize away, or title-only any of the six publications or four projects.",
+      "Don't turn the certificate wall into a carousel; it is a static gallery with an accessible show-all disclosure.",
+      "Don't introduce neon technology styling, decorative gradients, glassmorphism, persistent motion, generic dashboard chrome, or a conventional academic-CV template.",
+      "Don't let the alternate dossier layout become a separate content truth; both modes render the same verified evidence."
+    ]
+  }
+}

@@ -3,14 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chenggang Zhang | Academic Homepage</title>
+  <title>Chenggang Zhang | Intelligent Vehicles and Energy Management</title>
   <meta
     name="description"
-    content="Academic homepage of Chenggang Zhang, focused on autonomous driving, multimodal sensor fusion, intelligent transportation, and predictive vehicle energy management."
+    content="Academic homepage of Chenggang Zhang, featuring research in intelligent vehicles, multimodal sensor fusion, motion prediction, and predictive vehicle energy management."
   >
-  <link rel="stylesheet" href="styles.css?v=20260805-1">
+  <link rel="canonical" href="https://chenggangzhang.com/">
+  <meta property="og:title" content="Chenggang Zhang | Intelligent Vehicles and Energy Management">
+  <meta property="og:description" content="Research in intelligent vehicles, multimodal sensor fusion, motion prediction, and predictive energy management.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chenggangzhang.com/">
+  <script>
+    if (new URLSearchParams(location.search).get("layout") === "c") {
+      document.documentElement.dataset.layout = "c";
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css?v=20260805-2">
 </head>
 <body>
+  <!--
+    DESIGN DIRECTION CONTRACT — seed d3300c85
+    THESIS: An evidence-first mobility research atlas, refusing both the generic academic CV page and the neon automotive-tech showcase.
+    OWN-WORLD: Warm ivory drawing sheets, deep-green structure, journal figures, precise rules, restrained copper, serif display type, and sans-serif metadata.
+    STORY: Visitors identify Chenggang's research focus, verify publications and project evidence, understand experience, then make contact by email.
+    FIRST VIEWPORT: Concept A pairs portrait and identity with a broad research thesis, three focus lanes, and four metrics; Concept C turns identity into a deep-green left dossier rail.
+    FORM: Grounded candidate 3, journal figure atlas / engineering plate compendium; seed d3300c85.
+    FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+  -->
   <a class="skip-link" href="#about">Skip to main content</a>
 
   <header class="topbar">
@@ -20,14 +39,10 @@
       <span></span>
     </button>
     <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#news">News</a>
-      <a href="#experience">Experience</a>
+      <a href="#projects">Research</a>
       <a href="#publications">Publications</a>
-      <a href="#projects">Projects</a>
-      <a href="#honors">Honors</a>
+      <a href="#experience">Experience</a>
+      <a href="#honors">Awards</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -40,11 +55,11 @@
 
       <h1>Chenggang Zhang</h1>
       <p class="profile-title">B.E. Student in Automotive Engineering</p>
-      <p class="profile-affiliation">Chang'an University / University College Dublin</p>
+      <p class="profile-affiliation">Chang'an University · University College Dublin</p>
 
       <p class="profile-bio">
-        Automotive engineering student and research assistant working on autonomous driving,
-        multimodal sensor fusion, vehicle trajectory prediction, and predictive energy management.
+        Automotive engineering student and research assistant working across intelligent vehicle
+        perception, motion prediction and planning, and predictive energy management.
       </p>
 
       <div class="profile-actions">
@@ -58,16 +73,12 @@
           <dd><a href="mailto:zhangkeo1111@gmail.com">zhangkeo1111@gmail.com</a></dd>
         </div>
         <div>
-          <dt>Location</dt>
-          <dd>Xi'an / Beijing / Edmonton</dd>
+          <dt>Current lab</dt>
+          <dd>University of Alberta NODE Lab</dd>
         </div>
         <div>
-          <dt>Github</dt>
-          <dd><a href="https://github.com/zhangkeo1111-gif">github.com/zhangkeo1111-gif</a></dd>
-        </div>
-        <div>
-          <dt>Website</dt>
-          <dd><a href="https://chenggangzhang.com">chenggangzhang.com</a></dd>
+          <dt>GitHub</dt>
+          <dd><a href="https://github.com/zhangkeo1111-gif" target="_blank" rel="noreferrer">zhangkeo1111-gif</a></dd>
         </div>
       </dl>
     </aside>
@@ -82,17 +93,21 @@
           Vehicle and Mobility. My research connects multimodal perception, state estimation,
           motion planning, model predictive control, and low-carbon vehicle energy management.
         </p>
-
-        <div class="research-tags" aria-label="Research interests">
-          <span>Intelligent Vehicles</span>
-          <span>Multimodal Sensor Fusion</span>
-          <span>Machine Learning</span>
-          <span>Optimization</span>
-          <span>Model Predictive Control</span>
-          <span>Robotics</span>
-          <span>Computer Vision</span>
-          <span>Energy Management</span>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#publications">View publications</a>
+          <a class="text-link" href="mailto:zhangkeo1111@gmail.com">Email Chenggang</a>
         </div>
+        <div class="research-focus" aria-label="Research focus">
+          <article><h3>Intelligent Vehicle Perception</h3><p>Multimodal sensor fusion, state estimation, and robust environmental understanding.</p></article>
+          <article><h3>Motion Prediction and Planning</h3><p>Vehicle trajectory prediction, autonomous-driving decision-making, and motion planning.</p></article>
+          <article><h3>Predictive Energy Management</h3><p>Learning-enhanced model predictive control and low-carbon energy management for hybrid vehicles.</p></article>
+        </div>
+        <dl class="key-metrics" aria-label="Academic profile metrics">
+          <div><dt>Publications</dt><dd>6</dd></div>
+          <div><dt>First / student-first author</dt><dd>2</dd></div>
+          <div><dt>Research laboratories</dt><dd>3</dd></div>
+          <div><dt>National Scholarship</dt><dd>2024</dd></div>
+        </dl>
       </section>
 
       <section id="education" class="section-block">
@@ -247,9 +262,9 @@
       <section id="publications" class="section-block">
         <div class="section-header">
           <div>
-            <h2>Papers and Conference Contributions</h2>
+            <h2>Publications</h2>
           </div>
-          <a class="text-link" href="mailto:zhangkeo1111@gmail.com">Request details</a>
+          <a class="text-link" href="mailto:zhangkeo1111@gmail.com">Email for research inquiries</a>
         </div>
 
         <div class="publication-list">
@@ -381,6 +396,7 @@
                 onboard sensor and visual data and is validated with real vehicle data and
                 high-fidelity ROS simulations.
               </p>
+              <div class="method-tags"><span>Multimodal fusion</span><span>State estimation</span><span>ROS</span></div>
               <span class="project-badge">Ongoing</span>
             </div>
           </article>
@@ -395,6 +411,7 @@
                 efficiency from 42.18% to 42.80%, maintained execution below 20 ms per control
                 step, and was validated through hardware-in-the-loop testing.
               </p>
+              <dl class="project-metrics"><div><dt>Equivalent ammonia</dt><dd>−1.45%</dd></div><div><dt>System efficiency</dt><dd>42.18% → 42.80%</dd></div><div><dt>Control step</dt><dd>&lt;20 ms</dd></div></dl>
               <span class="project-badge">Ongoing</span>
             </div>
           </article>
@@ -408,6 +425,7 @@
                 Algorithm. MATLAB simulation identified efficient operating ranges of 40-45 kW
                 for the diesel engine and 5-10 kW for the fuel cell.
               </p>
+              <dl class="project-metrics"><div><dt>Diesel efficient range</dt><dd>40–45 kW</dd></div><div><dt>Fuel-cell efficient range</dt><dd>5–10 kW</dd></div></dl>
               <span class="project-badge">Finished</span>
             </div>
           </article>
@@ -421,6 +439,7 @@
                 design, finite-element simulation, prototyping, and dynamic verification produced
                 a 9.75-10.30 N force plateau and an effective vibration-isolation region.
               </p>
+              <dl class="project-metrics"><div><dt>Force plateau</dt><dd>9.75–10.30 N</dd></div></dl>
               <span class="project-badge">Finished</span>
             </div>
           </article>
@@ -468,9 +487,9 @@
         <div class="certificate-showcase">
           <h3>Certificates and Awards</h3>
 
-          <div class="certificate-wall" aria-label="Certificate gallery with 33 items">
+          <div id="certificate-gallery" class="certificate-wall" aria-label="Certificate gallery with 33 items">
             <div class="certificate-row">
-              <div class="certificate-track" data-marquee>
+              <div class="certificate-track">
                 <a class="certificate-card" href="assets/certificates/library/originals/01-college-contribution-2024-25.pdf" target="_blank" rel="noreferrer"><img src="assets/certificates/library/previews/01-college-contribution-2024-25.jpg" alt="College contribution award certificate for the 2024-2025 academic year" loading="lazy" decoding="async"></a>
                 <a class="certificate-card" href="assets/certificates/library/originals/04-youth-league-member-2024-25.pdf" target="_blank" rel="noreferrer"><img src="assets/certificates/library/previews/04-youth-league-member-2024-25.jpg" alt="Outstanding Youth League Member certificate for the 2024-2025 academic year" loading="lazy" decoding="async"></a>
                 <a class="certificate-card" href="assets/certificates/library/originals/09-math-modeling-shaanxi-second-prize.pdf" target="_blank" rel="noreferrer"><img src="assets/certificates/library/previews/09-math-modeling-shaanxi-second-prize.jpg" alt="Shaanxi second prize certificate for the 2025 national mathematical modeling competition" loading="lazy" decoding="async"></a>
@@ -486,7 +505,7 @@
             </div>
 
             <div class="certificate-row">
-              <div class="certificate-track" data-marquee>
+              <div class="certificate-track">
                 <a class="certificate-card" href="assets/certificates/library/originals/02-physics-excellence-2024-25.pdf" target="_blank" rel="noreferrer"><img src="assets/certificates/library/previews/02-physics-excellence-2024-25.jpg" alt="University physics course excellence certificate for the 2024-2025 academic year" loading="lazy" decoding="async"></a>
                 <a class="certificate-card" href="assets/certificates/library/originals/05-academic-excellence-2023-24.pdf" target="_blank" rel="noreferrer"><img src="assets/certificates/library/previews/05-academic-excellence-2023-24.jpg" alt="Academic excellence award certificate for the 2023-2024 academic year" loading="lazy" decoding="async"></a>
                 <a class="certificate-card" href="assets/certificates/library/originals/08-mechanics-excellence.pdf" target="_blank" rel="noreferrer"><img src="assets/certificates/library/previews/08-mechanics-excellence.jpg" alt="Mechanics for Engineers course excellence certificate" loading="lazy" decoding="async"></a>
@@ -503,7 +522,7 @@
             </div>
 
             <div class="certificate-row">
-              <div class="certificate-track" data-marquee>
+              <div class="certificate-track">
                 <a class="certificate-card" href="assets/certificates/library/originals/03-linear-algebra-excellence-2024-25.pdf" target="_blank" rel="noreferrer"><img src="assets/certificates/library/previews/03-linear-algebra-excellence-2024-25.jpg" alt="Linear algebra course excellence certificate for the 2024-2025 academic year" loading="lazy" decoding="async"></a>
                 <a class="certificate-card" href="assets/certificates/library/originals/06-thermodynamics-excellence.pdf" target="_blank" rel="noreferrer"><img src="assets/certificates/library/previews/06-thermodynamics-excellence.jpg" alt="Thermodynamics 1 course excellence certificate" loading="lazy" decoding="async"></a>
                 <a class="certificate-card" href="assets/certificates/library/originals/22-national-digital-media-wx.jpg" target="_blank" rel="noreferrer"><img src="assets/certificates/library/previews/22-national-digital-media-wx.jpg" alt="National digital media competition certificate for data visualization" loading="lazy" decoding="async"></a>
@@ -517,6 +536,7 @@
               </div>
             </div>
           </div>
+          <button class="certificate-toggle" type="button" aria-expanded="false" aria-controls="certificate-gallery">Show all certificates</button>
         </div>
       </section>
 
@@ -535,9 +555,10 @@
   </main>
 
   <footer class="site-footer">
-    <p>(c) 2026 Chenggang Zhang. Academic homepage for research and publications.</p>
+    <p>© 2026 Chenggang Zhang</p>
+    <p>Academic homepage · Intelligent vehicles and sustainable mobility</p>
   </footer>
 
-  <script src="script.js?v=20260804-4"></script>
+  <script src="script.js?v=20260805-2"></script>
 </body>
 </html>
