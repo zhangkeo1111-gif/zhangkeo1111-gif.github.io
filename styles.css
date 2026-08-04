@@ -948,6 +948,10 @@ a {
   object-fit: contain;
 }
 
+.certificate-card img.certificate-image-rotated {
+  transform: rotate(-90deg) scale(1.4);
+}
+
 .contact-block {
   display: flex;
   align-items: center;
