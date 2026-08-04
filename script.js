@@ -2,8 +2,7 @@ const navToggle = document.querySelector(".nav-toggle");
 const siteNav = document.querySelector(".site-nav");
 const navLinks = document.querySelectorAll(".site-nav a");
 const sections = document.querySelectorAll("section[id]");
-const certificateWall = document.querySelector(".certificate-wall");
-const certificateToggle = document.querySelector(".certificate-toggle");
+const marqueeTracks = document.querySelectorAll("[data-marquee]");
 
 const setMenuOpen = (isOpen) => {
   if (!navToggle || !siteNav) return;
@@ -29,32 +28,25 @@ if (navToggle && siteNav) {
   });
 
   window.addEventListener("resize", () => {
-    if (window.innerWidth > 900) setMenuOpen(false);
+    if (window.innerWidth > 980) setMenuOpen(false);
   });
 }
 
-navLinks.forEach((link) => link.addEventListener("click", () => setMenuOpen(false)));
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => setMenuOpen(false));
+});
 
-if (certificateWall && certificateToggle) {
-  const certificateCards = [...certificateWall.querySelectorAll(".certificate-card")];
-  const featuredCount = 8;
+marqueeTracks.forEach((track) => {
+  if (track.dataset.cloned === "true") return;
+  track.dataset.cloned = "true";
 
-  const setCertificatesExpanded = (isExpanded) => {
-    certificateCards.slice(featuredCount).forEach((card) => {
-      card.hidden = !isExpanded;
-    });
-    certificateWall.classList.toggle("is-expanded", isExpanded);
-    certificateToggle.setAttribute("aria-expanded", String(isExpanded));
-    certificateToggle.textContent = isExpanded
-      ? "Show fewer certificates"
-      : `Show all ${certificateCards.length} certificates`;
-  };
-
-  setCertificatesExpanded(false);
-  certificateToggle.addEventListener("click", () => {
-    setCertificatesExpanded(certificateToggle.getAttribute("aria-expanded") !== "true");
+  [...track.children].forEach((item) => {
+    const clone = item.cloneNode(true);
+    clone.setAttribute("aria-hidden", "true");
+    clone.setAttribute("tabindex", "-1");
+    track.appendChild(clone);
   });
-}
+});
 
 if ("IntersectionObserver" in window) {
   const activeNavObserver = new IntersectionObserver(
@@ -64,6 +56,7 @@ if ("IntersectionObserver" in window) {
         .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
 
       if (!visible) return;
+
       navLinks.forEach((link) => {
         link.classList.toggle(
           "is-active",
@@ -71,7 +64,10 @@ if ("IntersectionObserver" in window) {
         );
       });
     },
-    { rootMargin: "-24% 0px -68% 0px", threshold: [0, 0.15, 0.4] }
+    {
+      rootMargin: "-28% 0px -60% 0px",
+      threshold: [0, 0.15, 0.4],
+    }
   );
 
   sections.forEach((section) => activeNavObserver.observe(section));
