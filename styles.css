@@ -228,20 +228,11 @@ h3 {
 }
 
 .portrait-slot {
-  position: relative;
   aspect-ratio: 4 / 5;
   margin-bottom: 24px;
   overflow: hidden;
   border: 1px solid var(--line-strong);
   background: var(--surface-soft);
-}
-
-.portrait-slot::after {
-  content: "";
-  position: absolute;
-  inset: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.65);
-  pointer-events: none;
 }
 
 .portrait-slot img {
