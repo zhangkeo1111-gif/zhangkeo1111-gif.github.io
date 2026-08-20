@@ -176,7 +176,7 @@ The system is flat by default. Depth is expressed through paper tones, one-pixel
 
 ## Shapes
 
-Forms are mostly rectangular and sheet-like. Figure frames, buttons, and certificate tiles use a modest 7px corner; project and education panels use 12px; 18px is retained as a large-system option but is not a dominant silhouette. Metadata tags alone use the full pill radius. Borders are one pixel, never ornamental double strokes; the portrait uses a single outer frame without an inset decoration.
+Forms are mostly rectangular and sheet-like. Figure frames, buttons, and certificate tiles use a modest 7px corner; project and education panels use 12px; 18px is retained as a large-system option but is not a dominant silhouette. Metadata tags alone use the full pill radius. Borders are one pixel, never ornamental double strokes; the portrait is frameless so the image reads cleanly against the dossier field.
 
 ## Components
 

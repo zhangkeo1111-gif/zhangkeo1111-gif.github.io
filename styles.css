@@ -231,7 +231,6 @@ h3 {
   aspect-ratio: 4 / 5;
   margin-bottom: 24px;
   overflow: hidden;
-  border: 1px solid var(--line-strong);
   background: var(--surface-soft);
 }
 
@@ -998,7 +997,6 @@ html[data-layout="c"] .profile-sidebar {
 html[data-layout="c"] .portrait-slot {
   aspect-ratio: 1 / 0.9;
   margin-bottom: 22px;
-  border-color: rgba(255, 255, 255, 0.35);
 }
 
 html[data-layout="c"] .profile-sidebar h1,
@@ -1502,7 +1500,6 @@ html[data-layout="hybrid"] .profile-sidebar {
 
 html[data-layout="hybrid"] .portrait-slot {
   aspect-ratio: 4 / 4.6;
-  border-color: rgba(255, 255, 255, 0.34);
 }
 
 html[data-layout="hybrid"] .profile-sidebar h1,
