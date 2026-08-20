@@ -368,6 +368,24 @@ h3 {
   font-size: clamp(1.04rem, 1.35vw, 1.2rem);
 }
 
+.opportunity-note {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+  color: var(--accent-dark);
+  font-weight: 700;
+}
+
+.opportunity-note::before {
+  width: 32px;
+  height: 1px;
+  flex: 0 0 auto;
+  background: var(--warm);
+  content: "";
+}
+
 .hero-actions {
   margin-bottom: 36px;
 }
