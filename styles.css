@@ -1517,7 +1517,7 @@ html[data-layout="hybrid"] .page-layout {
 }
 
 html[data-layout="hybrid"] .hero-block h2 {
-  max-width: 1080px;
+  max-width: 960px;
 }
 
 html[data-layout="hybrid"] .profile-sidebar {
@@ -1559,6 +1559,85 @@ html[data-layout="hybrid"] .profile-actions .button-secondary {
 
 html[data-layout="hybrid"] .profile-facts {
   border-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (min-width: 1101px) {
+  html[data-layout="hybrid"] .profile-sidebar {
+    align-self: start;
+    padding: 24px;
+  }
+
+  html[data-layout="hybrid"] .portrait-slot {
+    aspect-ratio: 4 / 4.4;
+    margin-bottom: 20px;
+  }
+
+  html[data-layout="hybrid"] .profile-sidebar h1 {
+    font-size: clamp(3rem, 3.2vw, 3.55rem);
+  }
+
+  html[data-layout="hybrid"] .profile-bio,
+  html[data-layout="hybrid"] .profile-actions {
+    display: none;
+  }
+
+  html[data-layout="hybrid"] .hero-block {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    column-gap: 28px;
+    align-content: start;
+    padding-top: 4px;
+  }
+
+  html[data-layout="hybrid"] .hero-block h2,
+  html[data-layout="hybrid"] .lead,
+  html[data-layout="hybrid"] .research-focus,
+  html[data-layout="hybrid"] .key-metrics {
+    grid-column: 1 / -1;
+  }
+
+  html[data-layout="hybrid"] .hero-block h2 {
+    margin-bottom: 20px;
+    font-size: clamp(3.25rem, 4vw, 4.8rem);
+    line-height: 0.95;
+  }
+
+  html[data-layout="hybrid"] .lead {
+    max-width: 68ch;
+    margin-bottom: 22px;
+  }
+
+  html[data-layout="hybrid"] .opportunity-note {
+    grid-column: 1;
+    align-self: center;
+    margin: 0;
+  }
+
+  html[data-layout="hybrid"] .hero-actions {
+    grid-column: 2;
+    justify-content: flex-end;
+    margin: 0;
+  }
+
+  html[data-layout="hybrid"] .research-focus {
+    margin-top: 30px;
+  }
+
+  html[data-layout="hybrid"] .research-focus article {
+    padding-top: 20px;
+    padding-bottom: 18px;
+  }
+
+  html[data-layout="hybrid"] .key-metrics {
+    margin-top: 22px;
+    border-right: 0;
+    border-left: 0;
+    background: transparent;
+  }
+
+  html[data-layout="hybrid"] .key-metrics div {
+    min-height: 82px;
+  }
 }
 
 /* Preserve the current edition's content sequence. */
