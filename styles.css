@@ -855,6 +855,7 @@ h3 {
 }
 
 .certificate-card {
+  position: relative;
   display: grid;
   aspect-ratio: 4 / 3;
   min-width: 0;
@@ -882,8 +883,14 @@ h3 {
   object-fit: contain;
 }
 
-.certificate-image-rotated {
-  transform: rotate(90deg) scale(0.75);
+.certificate-card img.certificate-image-rotated {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(70.875% - 17px);
+  height: auto;
+  max-width: none;
+  transform: translate(-50%, -50%) rotate(-90deg);
 }
 
 .certificate-toggle {
