@@ -372,7 +372,7 @@ h3 {
   display: flex;
   width: fit-content;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
   margin-bottom: 26px;
   color: var(--accent-dark);
   font-size: clamp(1.08rem, 1.3vw, 1.35rem);
@@ -380,12 +380,12 @@ h3 {
   line-height: 1.25;
 }
 
-.opportunity-note::before {
-  width: 48px;
-  height: 2px;
+.opportunity-icon {
+  display: inline-grid;
   flex: 0 0 auto;
-  background: var(--warm);
-  content: "";
+  place-items: center;
+  font-size: 1.05em;
+  line-height: 1;
 }
 
 .hero-actions {
