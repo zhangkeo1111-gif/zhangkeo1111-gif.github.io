@@ -29,7 +29,7 @@
   --radius-md: 12px;
   --radius-lg: 18px;
   --shadow-soft: 0 18px 52px rgba(17, 47, 38, 0.08);
-  --content-width: min(1600px, calc(100vw - clamp(64px, 10vw, 192px)));
+  --content-width: min(1720px, 92vw);
   --nav-height: 72px;
 }
 
@@ -416,7 +416,7 @@ h3 {
 }
 
 .research-focus h3 {
-  margin: 0 0 9px;
+  margin: 0 0 12px;
   color: var(--accent-dark);
   font-family: "Source Serif 4", Georgia, serif;
   font-size: 1.18rem;
@@ -431,10 +431,10 @@ h3 {
 
 .key-metrics {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   margin: 26px 0 0;
-  border: 1px solid var(--line-strong);
-  background: rgba(233, 240, 234, 0.62);
+  border-top: 1px solid var(--line-strong);
+  border-bottom: 1px solid var(--line-strong);
 }
 
 .key-metrics div {
@@ -1125,16 +1125,7 @@ html[data-layout="c"] .contact-block {
   }
 
   .key-metrics {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .key-metrics div:nth-child(3) {
-    border-top: 1px solid var(--line-strong);
-    border-left: 0;
-  }
-
-  .key-metrics div:nth-child(4) {
-    border-top: 1px solid var(--line-strong);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .publication {
@@ -1420,6 +1411,15 @@ html[data-layout="c"] .contact-block {
     padding: 12px;
   }
 
+  .key-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .key-metrics div + div {
+    border-top: 1px solid var(--line-strong);
+    border-left: 0;
+  }
+
   .key-metrics dd {
     font-size: 1.55rem;
   }
@@ -1512,12 +1512,12 @@ html[data-layout="c"] .contact-block {
 
 /* Final A+C hybrid: A's broad research narrative with C's identity dossier. */
 html[data-layout="hybrid"] .page-layout {
-  grid-template-columns: clamp(300px, 23vw, 360px) minmax(0, 1fr);
-  gap: 28px 48px;
+  grid-template-columns: clamp(350px, 21vw, 365px) minmax(0, 1fr);
+  gap: 28px 44px;
 }
 
 html[data-layout="hybrid"] .hero-block h2 {
-  max-width: 960px;
+  max-width: 1080px;
 }
 
 html[data-layout="hybrid"] .profile-sidebar {
@@ -1563,7 +1563,7 @@ html[data-layout="hybrid"] .profile-facts {
 
 @media (min-width: 1101px) {
   html[data-layout="hybrid"] .profile-sidebar {
-    align-self: start;
+    align-self: stretch;
     padding: 24px;
   }
 
@@ -1582,45 +1582,33 @@ html[data-layout="hybrid"] .profile-facts {
   }
 
   html[data-layout="hybrid"] .hero-block {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    column-gap: 28px;
-    align-content: start;
+    display: block;
     padding-top: 4px;
-  }
-
-  html[data-layout="hybrid"] .hero-block h2,
-  html[data-layout="hybrid"] .lead,
-  html[data-layout="hybrid"] .research-focus,
-  html[data-layout="hybrid"] .key-metrics {
-    grid-column: 1 / -1;
   }
 
   html[data-layout="hybrid"] .hero-block h2 {
     margin-bottom: 20px;
-    font-size: clamp(3.25rem, 4vw, 4.8rem);
-    line-height: 0.95;
+    font-size: clamp(3.25rem, 4vw, 4.5rem);
+    line-height: 0.98;
+    text-wrap: balance;
   }
 
   html[data-layout="hybrid"] .lead {
-    max-width: 68ch;
-    margin-bottom: 22px;
+    max-width: 900px;
+    margin-bottom: 18px;
   }
 
   html[data-layout="hybrid"] .opportunity-note {
-    grid-column: 1;
-    align-self: center;
-    margin: 0;
+    margin-bottom: 14px;
   }
 
   html[data-layout="hybrid"] .hero-actions {
-    grid-column: 2;
-    justify-content: flex-end;
-    margin: 0;
+    justify-content: flex-start;
+    margin-bottom: 30px;
   }
 
   html[data-layout="hybrid"] .research-focus {
-    margin-top: 30px;
+    margin-top: 0;
   }
 
   html[data-layout="hybrid"] .research-focus article {
@@ -1630,9 +1618,6 @@ html[data-layout="hybrid"] .profile-facts {
 
   html[data-layout="hybrid"] .key-metrics {
     margin-top: 22px;
-    border-right: 0;
-    border-left: 0;
-    background: transparent;
   }
 
   html[data-layout="hybrid"] .key-metrics div {
