@@ -25,7 +25,7 @@ Visitors typically arrive from an application, paper, research introduction, or 
 ## Capabilities and Constraints
 
 - Plain HTML, CSS, and minimal JavaScript; no build step, server, framework, or third-party API.
-- All six current publications remain fully expanded on the homepage with their authors, venues, status, DOI, metadata, preview images, and links.
+- All seven current publications remain fully expanded on the homepage with their authors, venues, status, DOI, metadata, preview images, and links.
 - All four projects, three research experiences, two schools, news items, award text, and real contact links remain intact.
 - Certificate files remain in `assets/certificates/`; the homepage may present a static curated subset with an accessible user-controlled expansion for the rest.
 - No CV, Download CV, Resume, Google Scholar, LinkedIn, invented claim, invented metric, or placeholder link may be added.

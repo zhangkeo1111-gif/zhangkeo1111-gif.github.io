@@ -154,7 +154,7 @@ The palette reads as paper, ink, institutional green, and a small amount of copp
 
 ## Layout
 
-The default desktop expression is a two-column evidence split inside a maximum 1280px content width: a portrait-and-identity column of at least 255px and a broad thesis column, separated by a 52px gutter. The first viewport joins portrait, identity, thesis, three focus lanes, and four metrics. After it, the visual reading order is Publications, Projects, News, Experience, Education, Research Toolkit, Awards and Service, then Contact, regardless of the source order used for no-script robustness.
+The default desktop expression is a two-column evidence split inside a maximum 1280px content width: a portrait-and-identity column of at least 255px and a broad thesis column, separated by a 52px gutter. The first viewport joins portrait, identity, thesis, three focus lanes, and three metrics. After it, the visual reading order is Publications, Projects, News, Experience, Education, Research Toolkit, Awards and Service, then Contact, regardless of the source order used for no-script robustness.
 
 Concept C is available through `?layout=c`. It expands to a 1380px canvas with a 330px deep-green identity rail and 44px content gutter. The rail is sticky below the 72px navigation, while the evidence column scrolls as an asymmetric engineering dossier. Publications tighten their index and figure columns; projects become single-column horizontal records; education, awards, and certificates also simplify to fit the dossier measure.
 
@@ -194,7 +194,7 @@ Forms are mostly rectangular and sheet-like. Figure frames, buttons, and certifi
 
 ### Cards / Containers
 
-- **Publication Record:** An ordered three-part plate—copper index, framed journal figure, then complete title/authors/venue/status/DOI metadata. All six records remain fully expanded.
+- **Publication Record:** An ordered three-part plate—copper index, framed journal figure, then complete title/authors/venue/status/DOI metadata. All seven records remain fully expanded.
 - **Project Panel:** A 12px paper panel with project label, full evidence, status badge, and quantitative metric cells. The four projects are two-up by default and one-up in Concept C and below 900px.
 - **Education Panel:** Two equal evidence panels by default; one column in Concept C and below 900px. Institution marks are contained in small white ruled squares.
 - **Certificate Tile:** A static 4:3 paper frame with object-contained certificate imagery; no carousel, drag surface, or automatic movement.
@@ -216,7 +216,7 @@ Without JavaScript, every certificate remains visible and directly linked. With 
 ### Do:
 
 - **Do** lead with research identity, thesis, three focus lanes, and four factual metrics.
-- **Do** keep all six publications, four projects, three research experiences, two schools, every award and service item, and real contact link intact.
+- **Do** keep all seven publications, four projects, three research experiences, two schools, every award and service item, and real contact link intact.
 - **Do** use real journal figures, logos, portrait, and certificate previews as evidence-bearing material.
 - **Do** preserve the focus-to-proof-to-experience-to-contact story and the metadata-first mobile band.
 - **Do** preserve skip navigation, semantic landmarks, descriptive alternative text, 44px-or-larger touch targets, visible focus, Escape handling, and reduced-motion support.
@@ -224,7 +224,7 @@ Without JavaScript, every certificate remains visible and directly linked. With 
 ### Don't:
 
 - **Don't** add “CV,” “Resume,” download prompts, Google Scholar, LinkedIn, invented metrics, invented claims, or placeholder links.
-- **Don't** hide, paginate, summarize away, or title-only any of the six publications or four projects.
+- **Don't** hide, paginate, summarize away, or title-only any of the seven publications or four projects.
 - **Don't** turn the certificate wall into a carousel; it is a static gallery with an accessible show-all disclosure.
 - **Don't** introduce neon technology styling, decorative gradients, glassmorphism, persistent motion, generic dashboard chrome, or a conventional academic-CV template.
 - **Don't** let the alternate dossier layout become a separate content truth; both modes render the same verified evidence.
