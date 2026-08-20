@@ -29,7 +29,7 @@
   --radius-md: 12px;
   --radius-lg: 18px;
   --shadow-soft: 0 18px 52px rgba(17, 47, 38, 0.08);
-  --content-width: min(1280px, calc(100vw - 64px));
+  --content-width: min(1600px, calc(100vw - clamp(64px, 10vw, 192px)));
   --nav-height: 72px;
 }
 
@@ -1485,8 +1485,12 @@ html[data-layout="c"] .contact-block {
 
 /* Final A+C hybrid: A's broad research narrative with C's identity dossier. */
 html[data-layout="hybrid"] .page-layout {
-  grid-template-columns: minmax(280px, 0.82fr) minmax(0, 2.18fr);
+  grid-template-columns: clamp(300px, 23vw, 360px) minmax(0, 1fr);
   gap: 28px 48px;
+}
+
+html[data-layout="hybrid"] .hero-block h2 {
+  max-width: 1080px;
 }
 
 html[data-layout="hybrid"] .profile-sidebar {
