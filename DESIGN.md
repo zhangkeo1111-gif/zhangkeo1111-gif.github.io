@@ -194,7 +194,7 @@ Forms are mostly rectangular and sheet-like. Figure frames, buttons, and certifi
 
 ### Cards / Containers
 
-- **Publication Record:** An ordered three-part plate—copper index, framed journal figure, then complete title/authors/venue/status/DOI metadata. All seven records remain fully expanded.
+- **Publication Record:** An ordered three-part plate—copper index, framed journal figure, then complete title/authors/venue/status/DOI metadata. All seven publication records remain fully expanded; manuscripts in preparation use the same evidence structure in a separate, clearly labeled group and do not change the publication count.
 - **Project Panel:** A 12px paper panel with project label, full evidence, status badge, and quantitative metric cells. The four projects are two-up by default and one-up in Concept C and below 900px.
 - **Education Panel:** Two equal evidence panels by default; one column in Concept C and below 900px. Institution marks are contained in small white ruled squares.
 - **Certificate Tile:** A static 4:3 paper frame with object-contained certificate imagery; no carousel, drag surface, or automatic movement.

@@ -15,7 +15,7 @@ Prospective supervisors, collaborators, and graduate-program reviewers identify 
 
 ## Proof and constraints
 
-The proof is complete and directly visible: seven full publications, four projects, three research experiences, two schools, all awards and academic service, journal figures, results, authorship, venues, DOI/status metadata, and real links. Certificates remain a static accessible gallery with a show-all disclosure. The surface must not add CV/Resume, unsupported profiles, invented claims, or placeholder links, and must remain useful without JavaScript from 360-1440px.
+The proof is complete and directly visible: seven full publications, a clearly separated non-counted manuscripts-in-preparation group, four projects, three research experiences, two schools, all awards and academic service, journal figures, results, authorship, venues, DOI/status metadata, and real links. Certificates remain a static accessible gallery with a show-all disclosure. The surface must not add CV/Resume, unsupported profiles, invented claims, or placeholder links, and must remain useful without JavaScript from 360-1440px.
 
 ## Chosen direction and memorable moment
 
