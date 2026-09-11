@@ -1,7 +1,6 @@
 const navToggle = document.querySelector(".nav-toggle");
 const siteNav = document.querySelector(".site-nav");
 const navLinks = document.querySelectorAll(".site-nav a");
-const sections = document.querySelectorAll("section[id]");
 const certificateWall = document.querySelector(".certificate-wall");
 const certificateToggle = document.querySelector(".certificate-toggle");
 
@@ -29,7 +28,7 @@ if (navToggle && siteNav) {
   });
 
   window.addEventListener("resize", () => {
-    if (window.innerWidth > 900) setMenuOpen(false);
+    if (window.innerWidth > 760) setMenuOpen(false);
   });
 }
 
@@ -56,23 +55,27 @@ if (certificateWall && certificateToggle) {
   });
 }
 
-if ("IntersectionObserver" in window) {
-  const activeNavObserver = new IntersectionObserver(
-    (entries) => {
-      const visible = entries
-        .filter((entry) => entry.isIntersecting)
-        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+const updateActiveNavigation = () => {
+  let activeLink = navLinks[0];
+  navLinks.forEach((link) => {
+    const section = document.querySelector(link.getAttribute("href"));
+    if (section && section.getBoundingClientRect().top <= 110) activeLink = link;
+  });
+  navLinks.forEach((link) => {
+    const active = link === activeLink;
+    link.classList.toggle("is-active", active);
+    if (active) link.setAttribute("aria-current", "location");
+    else link.removeAttribute("aria-current");
+  });
+};
 
-      if (!visible) return;
-      navLinks.forEach((link) => {
-        link.classList.toggle(
-          "is-active",
-          link.getAttribute("href") === `#${visible.target.id}`
-        );
-      });
-    },
-    { rootMargin: "-24% 0px -68% 0px", threshold: [0, 0.15, 0.4] }
-  );
-
-  sections.forEach((section) => activeNavObserver.observe(section));
-}
+let navigationFrame = 0;
+window.addEventListener("scroll", () => {
+  if (navigationFrame) return;
+  navigationFrame = requestAnimationFrame(() => {
+    navigationFrame = 0;
+    updateActiveNavigation();
+  });
+}, { passive: true });
+window.addEventListener("resize", updateActiveNavigation);
+updateActiveNavigation();
