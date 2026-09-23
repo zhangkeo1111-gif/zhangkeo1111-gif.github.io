@@ -86,7 +86,7 @@
                 <h3>University of Alberta - NODE Lab</h3>
               </div>
               <p class="entry-role">Research Assistant, Edmonton, Canada</p>
-              <p>Multimodal perception and state estimation for autonomous driving.</p>
+              <p>Online human localization and motion tracking with RGB–LiDAR data, followed by closed-loop pedestrian avoidance experiments in Isaac Sim.</p>
             </div>
           </article>
           <article class="entry">
@@ -255,14 +255,26 @@
           <article class="project-row">
             <div class="project-label">Jul. 2026 - Present</div>
             <div>
-              <h3>Learning-Based Multimodal Sensor Fusion for Autonomous Driving</h3>
+              <h3>Online RGB–LiDAR Human Localization and Tracking</h3>
               <p>
-                Developing a learning-based multimodal sensor-fusion framework for robust state
-                estimation, perception, and motion planning in autonomous vehicles. The work fuses
-                onboard sensor and visual data and is validated with real vehicle data and
-                high-fidelity ROS simulations.
+                Built an online pipeline that combines person detection with LiDAR geometry to estimate
+                3D human positions and causal motion tracks. Compared detector and tracking variants
+                across four NavWareSet scenes. A Kalman-filter option maintained motion states during
+                controlled measurement gaps; it did not improve raw 3D localization accuracy.
               </p>
 
+            </div>
+          </article>
+          <article class="project-row">
+            <div class="project-label">Sept. 2026 - Present</div>
+            <div>
+              <h3>Pedestrian Avoidance with a Husky A300 in Isaac Sim</h3>
+              <p>
+                Connected onboard RGB-D person detection, depth-based localization, Kalman tracking,
+                and a route-relative passing controller in a closed simulation loop. The same controller
+                completed seven classic single-pedestrian scenarios in one seeded run per scenario,
+                with no human or static collision flags. Physical-robot testing is the next step.
+              </p>
             </div>
           </article>
           <article class="project-row">
