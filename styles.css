@@ -96,6 +96,9 @@ time,.entry-date,.project-label { color: var(--muted); font-size: .9375rem; font
 .project-label { margin-bottom: 5px; }
 .project-row h3 { margin-bottom: 10px; }
 .project-row p { max-width: 78ch; }
+.project-media { width: min(100%, 680px); margin: 18px 0 4px; }
+.project-media img { width: 100%; height: auto; aspect-ratio: 16 / 9; border: 1px solid var(--line); border-radius: 4px; }
+.project-media figcaption { margin-top: 7px; color: var(--muted); font-size: .875rem; line-height: 1.5; }
 .award-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 24px 36px; }
 .award-layout article:nth-child(2) { grid-column: 1 / -1; grid-row: 2; }
 .award-layout h3 { margin-bottom: 12px; }
